@@ -75,3 +75,117 @@ if(nome) {
 10 !== '10' // true
 
 console.log('20' !== 20);
+
+// OPERADORES LÓGICOS &&
+true && true; // true
+true && false; // false
+false && true; // false
+'Gato' && 'Cão'; // 'Cão', retorna sempre o ultimo valor verdadeiro, quando não há false. quando há false, retorna primeiro valor false
+(5 - 5) && (5 + 5); // 0
+'Gato' && false; // false
+(5 >= 5) && (3 < 6); // true, retorna true ou false pois está submetido ao resultado da operação de comparação >= e <
+
+// // OPERADORES LÓGICOS || (ou) - sempre em busca do primeiro verdadeiro
+true || true; // true
+true || false; // true
+false || true; // true
+'Gato' || 'Cão'; // 'Gato'
+(5 - 5) || (5 + 5); // 10
+'Gato' || false; // Gato
+(5 >= 5) || (3 < 6); // true
+
+var condicional = (5 - 5) || ('5' + 4) || (10 - 2);
+console.log(condicional);
+
+
+// SWITCH
+//Com o switch você pode verificar se uma variável é igual à diferentes valores utilizando o case. Caso ela seja igual, você pode fazer alguma coisa e utilizar a palavra chave break; para cancelar a continuação. O valor de default ocorrerá caso nenhuma das anteriores seja verdadeira.
+var corFavorita = 'Vermelho';
+
+switch (corFavorita) {
+  case 'Azul':
+    console.log('Olhe para o céu.');
+    break;
+  case 'Vermelho':
+    console.log('Olhe para rosas.');
+    break;
+  case 'Amarelo':
+    console.log('Olhe para o sol.');
+    break;
+  default:
+    console.log('Feche os olhos');
+}
+
+var corFavorita = 'Rosa';
+
+switch (corFavorita) {
+  case 'Azul':
+    console.log('Olhe para o céu');
+    break;
+  case 'Rosa':
+    console.log('Olhe para as rosas');
+    break;
+  default:
+    console.log('Feche os olhos');
+}
+
+
+
+
+
+// EXERCÍCIO
+// Verifique se a sua idade é maior do que a de algum parente
+
+var minhaIdade = 59;
+var idadePai = 58;
+
+if(minhaIdade > idadePai) {
+  console.log('é maior');
+} else if(minhaIdade === idadePai) {
+  console.log('é igual');
+} else {
+  console.log('é menor');
+}
+
+
+// Dependendo do resultado coloque no console 'É maior', 'É igual' ou 'É menor'
+
+
+
+// Qual valor é retornado na seguinte expressão?
+var expressao = (5 - 2) && (5 - ' ') && (5 - 2); //true
+
+// Verifique se as seguintes variáveis são Truthy ou Falsy
+var nome = 'Andre'; //truthy
+var idade = 28; //truthy
+var possuiDoutorado = false; //false
+var empregoFuturo; //false
+var dinheiroNaConta = 0; //false
+
+// Compare o total de habitantes do Brasil com China (valor em milhões)
+var brasil = 207;
+var china = 1340;
+
+console.log(brasil === china);
+
+if(brasil > china) {
+  console.log('é maior');
+} else if(brasil == china) {
+  console.log('é igual');
+} else {
+  console.log('é menor');
+}
+
+// O que irá aparecer no console?
+if(('Gato' === 'gato') && (5 > 2)) {
+  console.log('Verdadeiro');
+} else {
+  console.log('Falso');
+} //Falso
+
+// O que irá aparecer no console?
+if(('Gato' === 'gato') || (5 > 2)) {
+  console.log('Gato' && 'Cão');
+} else {
+  console.log('Falso');
+} //Cão
