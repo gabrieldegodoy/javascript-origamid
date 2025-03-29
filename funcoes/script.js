@@ -56,3 +56,6 @@ function mostraConsole() {
 }
 
 addEventListener('click', mostraConsole);
+
+// FUNÇÕES
+
