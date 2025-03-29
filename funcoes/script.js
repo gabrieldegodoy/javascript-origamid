@@ -42,4 +42,17 @@ function corFavorita(cor) {
     return 'Você não gosta de nada'
   }
 }
-corFavorita();
+console.log(corFavorita('azul'));
+
+// ARGUMENTOS PODEM SER FUNÇÕES
+//Chamadas de Callback, geralmente são funções que ocorrem após algum evento
+addEventListener /* é uma função nativa do browser */('click' /* primeiro parâmetro, tipo de evento */, function() /* é uma função anônima/callback - também pode ser expressa sem escrever o function, apenas com () => {} */ {
+  console.log('Clicou');
+}); //nesse caso, o evento de click manda a função declarada retornar a instrução que foi passada dentro dela
+
+//Outra forma de escrever essa mesma função:
+function mostraConsole() {
+  console.log('Oi');
+}
+
+addEventListener('click', mostraConsole);
