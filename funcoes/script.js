@@ -103,7 +103,7 @@ function precisoVisitar(paisesVisitados) {
   var totalPaises = 193;
   return `Ainda faltam ${totalPaises - paisesVisitados} paises para visitar`
 }
-console.log(totalPaises); //erro, totalPaises não definido
+//console.log(totalPaises); //erro, totalPaises não definido
 
 //variavel criada fora da função consigo ver dentro, mas criada dentro não consigo ver fora
 
@@ -120,8 +120,8 @@ function dados() {
   return outrosDados();
 }
 
-dados(); // Retorna 'André, 29, Rio de Janeiro, Designer'
-outrosDados(); // retorna um erro
+console.log(dados()); // Retorna 'André, 29, Rio de Janeiro, Designer'
+//outrosDados(); // retorna um erro
 
 // HOISTING
 //Antes de executar uma função, o JS 'move' todas as funções declaradas para a memória
@@ -137,30 +137,97 @@ function imc(peso, altura) {
 
 // Exercício
 // Crie uma função para verificar se um valor é Truthy
+var corValor = 'Azul';
+
+function verificaValor() {
+  if(corValor === '') {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+console.log(verificaValor());
+
+//COrreção
+function isTruthy(dado) {
+  return !!dado;
+}
+
+console.log(isTruthy(' '));
+
 
 // Crie uma função matemática que retorne o perímetro de um quadrado
+var ladoQuadrado = 10;
+
+function perimetroQuadrado(perimetro) {
+  return perimetro = ladoQuadrado * 4;
+}
+
+console.log(perimetroQuadrado());
+
+//Correção
+function perimetroQuadrado2(lado) {
+  return lado * 4;
+}
+
+console.log(perimetroQuadrado2(2));
+
+
 // lembrando: perímetro é a soma dos quatro lados do quadrado
 
 // Crie uma função que retorne o seu nome completo
+
+function nomeCompleto(nome, sobrenome) {
+  return `${nome} ${sobrenome}`
+}
+
+console.log(nomeCompleto('Gabriel', 'Godoy'));
+
 // ela deve possuir os parâmetros: nome e sobrenome
 
 // Crie uma função que verifica se um número é par
 
+function numeroPar(numero) {
+  var numeroVerificado = numero % 2;
+  if(numeroVerificado === 0) {
+    return 'É par'
+  } else {
+    return 'É ímpar'
+  }
+}
+
+console.log(numeroPar(2));
+
 // Crie uma função que retorne o tipo de
 // dado do argumento passado nela (typeof)
+
+function tipoDado(dado1) {
+  return typeof dado1;
+}
+
+console.log(tipoDado(true));
+
+
 
 // addEventListener é uma função nativa do JavaScript
 // o primeiro parâmetro é o evento que ocorre e o segundo o Callback
 // utilize essa função para mostrar no console o seu nome completo
 // quando o evento 'scroll' ocorrer.
 
+addEventListener('scroll', function() {
+  console.log('Gabriel Godoy');
+});
+
+
+
 // Corrija o erro abaixo
+var totalPaises = 193;
 function precisoVisitar(paisesVisitados) {
-  var totalPaises = 193;
   return `Ainda faltam ${totalPaises - paisesVisitados} países para visitar`;
 }
+
 function jaVisitei(paisesVisitados) {
   return `Já visitei ${paisesVisitados} do total de ${totalPaises} países`;
 }
-precisoVisitar(20);
-jaVisitei(20);
+precisoVisitar();
