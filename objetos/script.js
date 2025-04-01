@@ -159,3 +159,6 @@ var cachorro = {
 
 console.log(cachorro);
 console.log(cachorro.latir('homem'));
+
+// TUDO É OBJETO
+
