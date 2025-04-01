@@ -46,3 +46,12 @@ Math.random(); // número aleatório, quebrado, de zero a um
 
 var pi = Math.PI;
 console.log(pi); // 3.14
+
+// OBJETOS 2
+
+//Criar um objeto
+//Um objeto é criado utilizando as chaves {}
+var carro = {};
+var pessoa = {};
+
+console.log(typeof carro); // 'object'
