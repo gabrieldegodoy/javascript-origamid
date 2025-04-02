@@ -36,3 +36,5 @@ while (i < 10) {
 }
 // Retorna de 0 a 9 no console
 //O for loop é o mais comum
+
+//ARRAYS E LOOPS 2
