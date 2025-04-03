@@ -14,3 +14,5 @@ console.log(href);
 
 const h1Selecionado = document.querySelector('h1'); //seleciona o primeiro h1
 document.body; //retorna o body
+
+// DOM 2
