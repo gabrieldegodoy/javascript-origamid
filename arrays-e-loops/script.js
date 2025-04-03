@@ -38,3 +38,67 @@ while (i < 10) {
 //O for loop é o mais comum
 
 //ARRAYS E LOOPS 2
+
+//Arrays e Loops
+var videoGames = ['Switch', 'PS4', 'XBox', '3DS'];
+for (var i = 0; i < videoGames.length; i++) {
+  console.log(videoGames[i]);
+}
+//O for loop é o mais comum
+
+//Break
+//O loop irá parar caso encontro e palavra break
+var videoGames = ['Switch', 'PS4', 'XBox', '3DS'];
+for (var i = 0; i < videoGames.length; i++) {
+  console.log(videoGames[i]);
+  if(videoGames[i] === 'PS4') {
+    break;
+  }
+}
+
+//forEach
+//forEach é um método que executa uma função para cada item da Array. É uma forma mais simples de utilizarmos um loop com arrays (ou array-like)
+var videoGames = ['Switch', 'PS4', 'XBox', '3DS'];
+videoGames.forEach(function(item) {
+  console.log(item);
+});
+// O argumento item será atribuído dinamicamente
+
+//Podemos passar os seguintes parâmetros item, index e array
+
+//Não se confunda com a sintaxe
+var numero = 0;
+var maximo = 50;
+for(;numero < maximo;) {
+  console.log(numero);
+  numero++;
+}
+//Não aconselho escrever da forma acima, mas funciona normalmente.
+
+//Exercício
+// Crie uma array com os anos que o Brasil ganhou a copa
+// 1959, 1962, 1970, 1994, 2002
+
+var copa = ['1959', '1962', '1970', '1994', '2002'];
+
+// Interaja com a array utilizando um loop, para mostrar
+// no console a seguinte mensagem, `O brasil ganhou a copa de ${ano}`
+
+copa.forEach(function(ano) {
+  console.log(`O Brasil ganhou a copa de ${ano}`);
+});
+
+// Interaja com um loop nas frutas abaixo e pare ao chegar em Pera
+var frutas1 = ['Banana', 'Maçã', 'Pera', 'Uva', 'Melância']
+for (var i = 0; i < frutas1.length; i++) {
+  console.log(frutas1[i]);
+  if(frutas1[i] === 'Pera') {
+    break;
+  };
+};
+
+// Coloque a última fruta da array acima em uma variável,
+// sem remover a mesma da array.
+
+var ultimaFruta = frutas1[frutas1.length - 1];
+console.log(ultimaFruta);
