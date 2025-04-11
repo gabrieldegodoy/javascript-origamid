@@ -12,6 +12,10 @@ dl {
   padding: 0;
 }
 
+html.largetext {
+  font-size: 150%;
+}
+
 img {
   display: block;
   max-width: 100%;
