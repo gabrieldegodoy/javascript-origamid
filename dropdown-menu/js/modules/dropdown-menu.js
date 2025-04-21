@@ -11,4 +11,8 @@ export default function initDropdownMenu() {
     event.preventDefault();
     this.classList.toggle('active');
   }
+
+  function outsideClick() {
+    
+  }
 }
