@@ -1,0 +1,1 @@
+//setTimeout e setInterval
