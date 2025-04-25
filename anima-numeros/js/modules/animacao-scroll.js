@@ -11,6 +11,8 @@ export default function initAnimaScroll() {
         const inSectionVisible = (sectionTop - windowMetade) < 0;
         if(inSectionVisible) {
           section.classList.add('ativo');
+        } else if(section.classList.contains('ativo')) {
+          section.classList.remove('ativo');
         }
       });
     }
