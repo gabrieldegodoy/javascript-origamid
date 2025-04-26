@@ -9,7 +9,29 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  
+  <form name="contato" id="contato">
+    <label for="nome">Nome</label>
+    <input type="text" name="nome" id="nome" required>
+    <span class="erro"></span>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required>
+    <span class="erro"></span>
+    <label for="mensagem">Mensagem</label>
+    <textarea name="mensagem" id="mensagem"></textarea>
+
+    <!--<select name="cores" id="cores">
+      <option value="blue">azul</option>
+      <option value="red">vermelho</option>
+    </select>
+
+    <input type="color">
+    <input type="date">
+    <input type="number">
+    <input type="range">
+    <input type="password">
+
+    <input type="checkbox" value="identidade" id="identidade">-->
+  </form>
 
   <script src="./js/script.js"></script>
 </body>
