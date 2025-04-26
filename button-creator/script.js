@@ -42,6 +42,8 @@ function handleChange(event) {
   showCss();
 }
 
+localStorage.nome = 'Gabriel';
+
 function showCss() {
   cssText.innerHTML = '<span>' + btn.style.cssText.split('; ').join(';</span><span>');
 }
